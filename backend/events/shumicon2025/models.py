@@ -65,7 +65,6 @@ class NativeLanguage(SimpleChoice):
 class KnownLanguage(SimpleChoice):
     pass
 
-
 class SignupExtra(SignupExtraBase):
     shift_type = models.CharField(
         max_length=15,
@@ -103,7 +102,7 @@ class SignupExtra(SignupExtraBase):
         max_length=8,
         choices=SHIRT_SIZES,
         verbose_name="Paidan koko",
-        help_text="Ajoissa ilmoittautuneet vänkärit saavat maksuttoman työvoimapaidan.",
+        help_text="Ajoissa ilmoittautuneet vänkärit saattavat saada maksuttoman työvoimapaidan.",
         default="NO_SHIRT",
     )
 
