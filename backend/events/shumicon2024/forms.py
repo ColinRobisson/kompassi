@@ -93,7 +93,7 @@ class OrganizerSignupForm(forms.ModelForm, AlternativeFormMixin):
 
     def get_excluded_m2m_field_defaults(self):
         return dict(
-            job_categories=JobCategory.objects.filter(event__slug="shumicon2023", name="Vastaava"),
+            job_categories=JobCategory.objects.filter(event__slug="shumicon2025", name="Vastaava"),
             # work_days=EventDay.objects.all(),
         )
 
@@ -177,8 +177,8 @@ class OrganizerSignupExtraForm(forms.ModelForm, AlternativeFormMixin):
             construction=False,
             # overseer=False,
             # need_lodging=False,
-            want_certificate=False,
-            # certificate_delivery_address=u'',
+            want_certificate=True,
+            certificate_delivery_address=u'',
             prior_experience="",
             free_text="Syötetty käyttäen coniitin ilmoittautumislomaketta",
         )
