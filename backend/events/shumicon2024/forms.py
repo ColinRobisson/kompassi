@@ -177,8 +177,8 @@ class OrganizerSignupExtraForm(forms.ModelForm, AlternativeFormMixin):
             construction=False,
             # overseer=False,
             # need_lodging=False,
-            want_certificate=True,
-            certificate_delivery_address="",
+            #want_certificate=True,
+            #certificate_delivery_address="",
             prior_experience="",
             free_text="Syötetty käyttäen coniitin ilmoittautumislomaketta",
         )
