@@ -53,8 +53,8 @@ class Setup:
                 name_inessive="Shumiconissa",
                 homepage_url="https://shumicon.fi",
                 organization=self.organization,
-                start_time=datetime(2025, 05, 24, 10, 0, tzinfo=self.tz),
-                end_time=datetime(2025, 05, 25, 18, 0, tzinfo=self.tz),
+                start_time=datetime(2025, 5, 24, 10, 0, tzinfo=self.tz),
+                end_time=datetime(2025, 5, 25, 18, 0, tzinfo=self.tz),
                 venue=self.venue,
             ),
         )
