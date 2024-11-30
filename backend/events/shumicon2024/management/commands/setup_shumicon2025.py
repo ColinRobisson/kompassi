@@ -44,17 +44,17 @@ class Setup:
             ),
         )
         self.event, unused = Event.objects.get_or_create(
-            slug="shumicon2024",
+            slug="shumicon2025",
             defaults=dict(
                 public=True,
-                name="Shumicon 2024",
+                name="Shumicon 2025",
                 name_genitive="Shumiconin",
                 name_illative="Shumiconiin",
                 name_inessive="Shumiconissa",
                 homepage_url="https://shumicon.fi",
                 organization=self.organization,
-                start_time=datetime(2024, 10, 21, 10, 0, tzinfo=self.tz),
-                end_time=datetime(2024, 10, 22, 18, 0, tzinfo=self.tz),
+                start_time=datetime(2025, 05, 24, 10, 0, tzinfo=self.tz),
+                end_time=datetime(2025, 05, 25, 18, 0, tzinfo=self.tz),
                 venue=self.venue,
             ),
         )
@@ -266,8 +266,8 @@ class Setup:
             slug="vastaava",
             defaults=dict(
                 title="Vastaavien ilmoittautumislomake",
-                signup_form_class_path="events.shumicon2024.forms:OrganizerSignupForm",
-                signup_extra_form_class_path="events.shumicon2024.forms:OrganizerSignupExtraForm",
+                signup_form_class_path="events.shumicon2025.forms:OrganizerSignupForm",
+                signup_extra_form_class_path="events.shumicon2025.forms:OrganizerSignupExtraForm",
                 active_from=now(),
                 active_until=self.event.end_time,
             ),
@@ -281,9 +281,9 @@ class Setup:
         defaults = dict(
             admin_group=tickets_admin_group,
             pos_access_group=pos_access_group,
-            reference_number_template="2024{:06d}",
-            contact_email="Shumicon 2024 -lipunmyynti <lipunmyynti@shumicon.fi>",
-            ticket_free_text="Tämä on sähköinen lippusi Shumicon 2024 -tapahtumaan. Sähköinen lippu vaihdetaan rannekkeeseen\n"
+            reference_number_template="2025{:06d}",
+            contact_email="Shumicon 2025 -lipunmyynti <lipunmyynti@shumicon.fi>",
+            ticket_free_text="Tämä on sähköinen lippusi Shumicon 2025 -tapahtumaan. Sähköinen lippu vaihdetaan rannekkeeseen\n"
             "lipunvaihtopisteessä saapuessasi tapahtumaan. Voit tulostaa tämän lipun tai näyttää sen\n"
             "älypuhelimen tai tablettitietokoneen näytöltä. Mikäli kumpikaan näistä ei ole mahdollista, ota ylös\n"
             "kunkin viivakoodin alla oleva neljästä tai viidestä sanasta koostuva Kissakoodi ja ilmoita se\n"
@@ -292,7 +292,7 @@ class Setup:
             "hyvityksen ottamalla yhteyttä: lipunmyynti@shumicon.fi.\n\n"
             "Tervetuloa Shumiconiin!\n\n"
             "---\n\n"
-            "This is your electronic ticket to Shumicon 2024. The electronic ticket will be exchanged to a wrist band\n"
+            "This is your electronic ticket to Shumicon 2025. The electronic ticket will be exchanged to a wrist band\n"
             "at a ticket exchange desk on your arrival at the event. You can print this ticket or show it from the\n"
             "screen of a smartphone or tablet. If neither is possible, please write down the four or five words from\n"
             "beneath the bar code and show that at a ticket exchange desk.\n\n"
@@ -330,8 +330,8 @@ class Setup:
 
         for product_info in [
             dict(
-                name="Shumicon 2024 viikonloppulippu / Weekend Ticket",
-                description="Sisältää pääsyn Shumicon 2024 -tapahtumaan koko viikonlopun ajan. / Includes the entrance to Shumicon 2024 for the weekend.",
+                name="Shumicon 2025 viikonloppulippu / Weekend Ticket",
+                description="Sisältää pääsyn Shumicon 2025 -tapahtumaan koko viikonlopun ajan. / Includes the entrance to Shumicon 2025 for the weekend.",
                 limit_groups=[
                     limit_group("Pääsyliput", 600),
                 ],
@@ -481,13 +481,13 @@ class Setup:
             defaults=dict(
                 title="Tarjoa puhe- tai muuta ohjelmaa",
                 short_description="Valitse tämä vaihtoehto, mikäli ohjelmanumerosi ei ole pöytäroolipeli.",
-                programme_form_code="events.shumicon2024.forms:ProgrammeForm",
+                programme_form_code="events.shumicon2025.forms:ProgrammeForm",
                 num_extra_invites=3,
                 order=30,
             ),
         )
         if default_form.programme_form_code == "programme.forms:ProgrammeOfferForm":
-            default_form.programme_form_code = "events.shumicon2024.forms:ProgrammeForm"
+            default_form.programme_form_code = "events.shumicon2025.forms:ProgrammeForm"
             default_form.save()
 
         self.event.programme_event_meta.create_groups()
@@ -532,7 +532,7 @@ class Setup:
 
 class Command(BaseCommand):
     args = ""
-    help = "Setup shumicon2024 specific stuff"
+    help = "Setup shumicon2025 specific stuff"
 
     def handle(self, *args, **opts):
         Setup().setup(test=settings.DEBUG)
