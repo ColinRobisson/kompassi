@@ -1,5 +1,5 @@
 import formDataToValues from "./formDataToValues";
-import { Choice, Field, FieldType, Values } from "./models";
+import { Choice, Field, FieldType, SelectField, Value } from "./models";
 import type { Translations } from "@/translations/en";
 
 export function getFieldEditorFields(
@@ -89,8 +89,6 @@ export function fieldToValues(field: Field): Record<string, any> {
   let choices: string | undefined = undefined;
   let questions: string | undefined = undefined;
 
-  const encryptTo = field.encryptTo ? field.encryptTo.join("\n") : "";
-
   switch (field.type) {
     case "SingleSelect":
     case "MultiSelect":
@@ -102,7 +100,7 @@ export function fieldToValues(field: Field): Record<string, any> {
       break;
   }
 
-  return { ...field, choices, questions, encryptTo };
+  return { ...field, choices, questions };
 }
 
 function parseChoices(choices: string): Choice[] {
@@ -121,10 +119,7 @@ export function formDataToField(
   initialValues: Field,
   formData: FormData,
 ): Field {
-  const values: Values = {
-    ...formDataToValues(fields, formData),
-    encryptTo: ((formData.get("encryptTo") as string) || "").split("\n"),
-  };
+  const values = formDataToValues(fields, formData);
 
   switch (initialValues.type) {
     case "SingleSelect":
