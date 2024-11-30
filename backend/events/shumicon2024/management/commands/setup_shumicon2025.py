@@ -123,7 +123,7 @@ class Setup:
             (
                 "cosplay",
                 "Cosplayvänkäri",
-                "Cosplayvänkäri työskentelee tapahtumassa backstagella cosplaykisojen parissa. Työtehtäviin kuuluu mm. cosplaykisaajien avustaminen sekä ohjeistus, tuomarointien aikataulujen seuraaminen ja backstagen yleisestä viihtyvyydestä huolehtiminen. HUOM! Työvuoro sijoittuu täysin lauantaipäivälle.",
+                "Cosplaytirpat työskentelevät Shumiconin monien cosplaykilpailujen parissa kulissien takana. Työtehtäviin kuuluu mm. cosplaykilpailijoiden avustaminen sekä ohjeistus, tuomarointien aikataulujen seuraaminen, sekä backstagen yleisestä viihtyvyydestä huolehtiminen. Työvuoro sijoittuu yleensä kokonaan lauantaipäivälle, sillä sunnuntaina ei ole cosplaykilpailuja.",
                 [tyovoima],
             ),
             (
@@ -135,7 +135,7 @@ class Setup:
             (
                 "greenroom",
                 "Greenroom",
-                "Greenroomissa pidät huolta työvoimalle tarkoitetuista tarjoiluista, täydennät niitä tarpeen mukaan ja huolehdit, ettei mitään puutu. Pidät myös huolen, että greenissä on mahdollisimman siistiä. HUOM! Työtehtävä vaatii hygieniapassin.",
+                "Green Room on tapahtuman työvoiman ja ohjelmanpitäjien taukotila, missä voi huilia työvuorojen välissä. Green Room -tirppana pidät huolta työvoimalle tarkoitetuista tarjoiluista, täydennät niitä tarpeen mukaan ja huolehdit, ettei mitään puutu. Pidät myös huolen siitä, että taukotilassa on mahdollisimman siistiä.Työtehtävä vaatii hygieniapassin. Hygieniapassi on todistus, jonka myöntää Ruokavirasto.",
                 [tyovoima],
             ),
             (
@@ -147,61 +147,55 @@ class Setup:
             (
                 "info",
                 "Info",
-                "Infopisteen henkilökunta vastaa kävijöiden kysymyksiin ja ratkaisee heidän ongelmiaan tapahtuman aikana. Tehtävä edellyttää asiakaspalveluasennetta, tervettä järkeä ja ongelmanratkaisukykyä. HUOM! Hakijan täytyy olla 18-vuotias ja osata suomen lisäksi vähintään englantia.",
+                "Infopisteen henkilökunta vastaa kävijöiden kysymyksiin ja ratkaisee heidän ongelmiaan tapahtuman aikana. Tehtävä edellyttää asiakaspalveluasennetta, tervettä järkeä ja ongelmanratkaisukykyä. Infopisteen tirpoilta vaaditaan 18 vuoden ikää sekä toivotaan suomen kielen lisäksi vähintään englannin kielen taitoa. Muustakin kieliosaamisesta on valtavaa hyötyä infossa työskennellessä!",
                 [tyovoima],
             ),
             (
                 "jv",
                 "Järjestyksenvalvonta",
-                "Järjestyksenvalvojat pitävät huolen kävijöiden turvallisuudesta tapahtuman aikana. Tehtävä edellyttää voimassa olevaa JV-korttia ja asiakaspalveluasennetta. HUOM! Et voi valita tätä tehtävää hakemukseesi, ellet ole täyttänyt tietoihisi JV-kortin numeroa (oikealta ylhäältä oma nimesi &gt; Pätevyydet).",
-                [tyovoima],
-            ),
-            (
-                "karaoke",
-                "Karaoke",
-                "Kun mieli tahtoo laulaa, on mentävä karaokeen. Tässä tehtävässä et niinkään pääse itse laulamaan vaan hoidat karaokepistettä muiden iloksi",
+                "Jotta kaikilla olisi turvallinen conikokemus, tarvitsemme järjestyksenvalvojia turvallisuusvastaavan tiimiin! Järjestyksenvalvojien tehtävänä on siis kävijöiden turvallisuuden valvominen conipaikalla. Työskentely tässä tiimissä edellyttää voimassa olevaa JV-korttia sekä asiakaspalveluasennetta. Huomioithan, että et voi valita tätä tehtävää hakemuksessa, ellet ole täyttänyt Kompassi-profiiliisi JV-korttisi numeroa.",
                 [tyovoima],
             ),
             (
                 "rannekkeenvaihto",
                 "Lipunmyynti- ja vaihto",
-                "Etukäteen ostettujen lippujen tarkistaminen ja vaihtaminen rannekkeisiin. Rahaa käsiteltäessä vaaditaan 18 vuoden ikää.",
+                "Lipunmyynnin ja -vaihdon tirpat ovat kävijöiden ensikosketus tapahtumaan. Lipunvaihdossa lipputirpat vastaanottavat kävijät ja vaihtavat näiden ostamat liput rannekkeisiin. Lipputirpat voidaan myös sijoittaa myymään tapahtuman oheistuotteita kun rannekkeenvaihto on ohi. Lipputirpan hommissa pärjää hyvällä asiakaspalveluasenteella ja pirteällä hymyllä. Rahaa käsiteltäessä vaaditaan 18 vuoden ikää.",
                 [tyovoima],
             ),
             (
                 "narikka",
                 "Narikka",
-                "Syksyllä on jo pimeää ja kylmää, joten ihmisillä on takit päällä. Tapahtuman ajaksi ne kannattaa jättää narikkaan säilöön.",
+                "Narikkatirpat pyörittävät conin narikkaa. Narikkoja voi olla useampia, esimerkiksi takkinarikka ja isotavaranarikka erikseen. Takkinarikassa voi työskennellä käytännössä kuka vain, sillä takkinarikkaan jätettävät tavarat ovat – kuten nimestä voi päätellä – yleensä takkeja tai kevyitä laukkuja ja kasseja. Narikassa seisotaan paljon ja meno voi olla todella ripeää ruuhka-aikana, joten narikkahommissa pärjää hyvin stressinsietokyvyllä ja hyvillä kengillä.",
                 [tyovoima],
             ),
             (
                 "ohjelmajuoksija",
-                "Ohjelmajuoksija",
-                "Ohjelmavänkärit tekevät tarkistuskierroksia ohjelmapisteissä ympäri tapahtumapaikkaa ja avustavat ohjelmanjärjestäjiä esim. salitekniikan käynnistämisessä. Aikaisemmasta tekniikkatietämyksestä on hyötyä tehtävässä.",
+                "Ohjelma ja karaoke",
+                "Coneissa on yleensä monenlaista ohjelmaa, joita ohjelmanpitäjät tulevat järjestämään ohjelmanhaun kautta. Ohjelmatirppojen tehtävä on avustaa ohjelmanpitäjiä käytännön asioiden kanssa conipaikalla niin ennen heidän ohjelmanumeroaan kuin joskus sen aikanakin. Tyypillisintä on auttaa ohjelmanpitäjiä salin laitteiden kanssa, esimerkiksi kun diaesitys ei näy ruudulla tai mikrofonista ei kuulu ääni. Myös monien conikävijöiden kestosuosikki karaoke kuuluu ohjelman alle! Karaoketirppa huolehtii, että jonotus karaokeen sujuu mutkattomasti ja oikeudenmukaisesti, tarjoaa biisikatalogia uusille jonottajille ja varmistaa, että kaikki halukkaat pääsevät laulamaan.",
                 [tyovoima],
             ),
             (
                 "siivous",
-                "Siivous",
-                "Siivous huolehtii tapahtuma-alueen viihtyisyydestä ja huollosta: tyhjennät roska-astioita ja keräät irtoroskia tapahtuma-alueelta, sekä tarvittaessa täytät vesipisteitä.",
+                "Siisteys",
+                "Siisteys- ja somistustiimi huolehtii tapahtuma-alueen viihtyisyydestä ja huollosta: roska-astioiden tyhjentäminen ja irtoroskien kerääminen tapahtuma-alueelta, sekä tarvittaessa vesipisteiden täyttö. Tehtäviin voi myös sisältyä mahdollisten läikkyneiden juomien tai ruokien siistiminen lattioilta sekä pintojen desinfiointi ympäri tapahtumaa. Shumiconissa osana siivoustiimin tehtäviä on myös tapahtuma-alueen somistus.",
                 [tyovoima],
             ),
             (
                 "taidekuja",
-                "Taidekuja",
-                "Taidekujan vänkärit tekevät säännöllisesti tarkastuskäyntejä taidekujalle esim. jonotusruuhkien välttämiseksi. Lisäksi he pitävät huolta taidekujalaisista ja tarvittaessa tauottavat näitä.",
+                "Taidekuja-apulaiset",
+                "Shumiconista löytyy taidekuja sekä tietenkin myyntisali. Molemmat alueet ovat hyvin suosittuja, ja koska niihin on vapaa pääsy, niihin voi odottaa syntyvän ajoittain ruuhkaa. Silloin taidekuja-apulaiset tulevat hätään! Taidekujan tirpat tekevät säännöllisesti tarkastuskäyntejä taidekujalle ja myyntisaliin kävijäviihtyvyyden varmistamiseksi. Lisäksi he pitävät huolta taidekujalaisista ja tarvittaessa tauottavat näitä, sillä kaikilla kujalaisilla ei ole pöytäavustajaa omasta takaa.",
                 [tyovoima],
             ),
             (
                 "valokuvaus",
-                "Valokuvaus",
-                "Valokuvaajat ottavat kuvia tapahtumapaikalla kävijöistä, ohjelmista sekä muista mielenkiintoisista jutuista! Huom. kuvaaja sitoutuu editoimaan kuvia myös tapahtuman aikana.",
+                "Valo- ja videokuvaajat",
+                "Valo- ja videokuvaajat taltioivat tapahtuman ohjelmia, kävijöitä ja hetkiä tapahtumassa sekä muistoiksi paikalla olleille että markkinointimateriaaliksi tapahtumalle. Kuvaajilla tulee olla oma kamera kuvatessa sekä valmius editoida itse kuvansa tai videonsa. Muista työnkuvista poiketen kuvaajilla ei ole määriteltyjä työvuoroja, sillä odotusarvo on, että tapahtumaa kuvataan paikalla ollessa tasaisesti, mutta kuvaajat saavat muiden vapaaehtoisten tapaan toivoa vapaita hetkiä esimerkiksi käydäkseen tietyssä ohjelmassa.",
                 [tyovoima],
             ),
             (
                 "yleinen",
-                "Yleisvänkäri",
-                "Olet conissa niinsanottu joka puun höylä, eli tarvittaessa olet kutsuttavissa auttamaan muita tiimejä erilaisissa tehtävissä, kuten mm. vesipisteiden täytössä tai ruuhka-ajan narikassa.",
+                "Yleistirpat",
+                "Yleistirpat ovat todellisia monitaitureita, jotka rientävät auttamaan muissa tiimeissä ruuhkahetkinä tai kun tiimissä on vajautta vaikkapa sairastapauksen takia. Yleistirppailu on oiva tapa nähdä, mitä muissa tiimeissä loppujen lopuksi tehdään, sillä yleistirppa saattaa tapahtuman aikana käydä auttamassa jokaisessa tiimissä hetken!",
                 [tyovoima],
             ),
         ]:
