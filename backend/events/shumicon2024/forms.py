@@ -137,7 +137,7 @@ class OrganizerSignupExtraForm(forms.ModelForm, AlternativeFormMixin):
             Fieldset(
                 "Lisätiedot",
                 "build_participation",
-                # "shirt_size",
+                "shirt_size",
                 "special_diet",
                 "special_diet_other",
                 Fieldset(
@@ -153,7 +153,7 @@ class OrganizerSignupExtraForm(forms.ModelForm, AlternativeFormMixin):
     class Meta:
         model = SignupExtra
         fields = (
-            # "shirt_size",
+            "shirt_size",
             "build_participation",
             "native_language",
             "native_language_other",
